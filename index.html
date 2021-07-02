@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<title>Login Page</title>
+	<style type="text/css">
+			p{
+				color: #ffffff;
+				font-size: 25px;
+				padding: 5px;
+				font-family: 'Roboto', sans-serif;
+				
+			}
+		
+	html{
+			background-image: linear-gradient(#ff2200, #ff6f00);
+			background-repeat: no-repeat;
+			background-size: 1600px 1000px;
+			}
+			a{
+				text-align: center;
+			}
+			.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #ffffff}
+
+.button:active {
+  background-color: #ffffff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+                }
+
+	</style>
+	<script type="text/javascript">
+			function checkpassword(){
+				var password = document.getElementById("passwordbox");
+				var passwordText= password.value;
+				if (passwordText =="iseeyoufoundthepassword"){
+					return true;
+				}
+				else{
+					alert("Access Denied Sir or Ma'am")
+					return false;
+
+				}
+
+
+
+			}
+
+
+
+	</script>
+</head>
+<body>
+	<p style="font-size: 50px;">Welcome</p>
+	<p> Please enter the password to view the following site.</p>
+	<p>Password: <input id="passwordbox" type="password"></p>
+	<button class="button"><a href="Jak.html" onclick="return checkpassword();"> Click Here<br>to submit your password.</a></button>
+</body>
+</html>
